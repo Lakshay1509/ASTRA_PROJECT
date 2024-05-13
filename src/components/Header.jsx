@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { brainwave } from "../assets";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
+
 
 import {New_Logo} from "../assets"
 
@@ -20,10 +20,10 @@ function Header() {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
-      enablePageScroll();
+      
     } else {
       setOpenNavigation(true);
-      disablePageScroll();
+      
     }
   };
 
